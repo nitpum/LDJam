@@ -6,21 +6,34 @@ public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
     // Update is called once per frame
-    [SerializeField] float timer;
+    [SerializeField] float updateMin;
+    [SerializeField] float minuteTimer;
+    [SerializeField] float hrTimer;
     [SerializeField] int day;
     void Start()
     {
-        timer = 0;
+        updateMin = 5;
+        hrTimer = 0;
+        minuteTimer = 0;
         day = 0;
     }
     void FixedUpdate()
     {
-        timer += Time.deltaTime;
-        Debug.Log(timer);
-        if(timer > 5f)
+        updateMin += Time.deltaTime;
+        if(updateMin > 5f)
         {
-            day += 1;
-            timer = 0;
+            minuteTimer += 1;
+            updateMin = 0;
+            if(minuteTimer > 60)
+            {
+                hrTimer += 1;
+                minuteTimer = 0;
+                if(hrTimer > 24)
+                {
+                    day += 1;
+                    hrTimer = 0;
+                }
+            }
         }
     }
 }
