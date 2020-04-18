@@ -8,7 +8,7 @@ public class CharacterStatusSlider : MonoBehaviour
 
     public Slider slider;
 
-    public CharacterStatus status;
+    public FloatVariable status;
 
     void Update()
     {
