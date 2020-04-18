@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "CharacterStatus")]
+[CreateAssetMenu(menuName = "Project/CharacterStatus")]
 public class CharacterStatus : ScriptableObject
 {
 
