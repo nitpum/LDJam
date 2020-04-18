@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f87588e1acce674d899d9d706505214, type: 3}
-  m_Name: Health
+  m_Script: {fileID: 11500000, guid: daf3bd4d1963ed947b988b6d601ab550, type: 3}
+  m_Name: Fish
   m_EditorClassIdentifier: 
-  infinityValue: 0
-  maxValue: 100
-  initialValue: 100
-  value: 0
+  itemName: Fish
+  image: {fileID: 0}
